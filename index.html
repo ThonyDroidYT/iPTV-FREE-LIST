@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333; /* Color de texto general */
         }
         header {
             background-color: #333;
@@ -27,13 +28,67 @@
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s; /* Transición suave para el hover */
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #007bff; /* Nuevo color al pasar el ratón (Azul vibrante) */
         }
-        .content {
+        .container {
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
-            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anthony Martínez y tus sitios web</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="inicio">
+            <h2>Bienvenido/a a la Página Principal</h2>
+            <p>Este es el **espacio de inicio**. Aquí puedes presentar tu trabajo más importante, tus últimas noticias o un resumen de lo que ofreces. Es la primera impresión para todos tus visitantes.</p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de Anthony Martínez</h2>
+            <p>En esta sección puedes detallar tu **biografía, misión y visión**. Háblales a tus visitantes sobre tu trayectoria, tus habilidades y lo que te motiva a crear sitios web. Un buen "Acerca de" genera confianza.</p>
+            <ul>
+                <li>**Objetivo 1:** Crear diseños web funcionales.</li>
+                <li>**Objetivo 2:** Usar tecnologías modernas (HTML, CSS, JavaScript).</li>
+                <li>**Objetivo 3:** Ofrecer soluciones digitales personalizadas.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Hablemos de tu Proyecto</h2>
+            <p>¿Tienes una idea o necesitas ayuda con un proyecto web? No dudes en contactarme. Puedes añadir un formulario, un número de teléfono o una dirección de correo electrónico aquí.</p>
+            <p>Correo electrónico: **contacto@tudominio.com**</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
         }
     </style>
 </head>
